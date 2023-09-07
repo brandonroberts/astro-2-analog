@@ -1,0 +1,21 @@
+{
+    "name": "astro-v3",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "projectType": "application",
+    "sourceRoot": "apps/frontend/astro/src",
+    "tags": [],
+    "targets": {
+      "build": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "astro build --config ./apps/frontend/astro/astro.config.mjs"
+        }
+      },
+      "serve": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "astro dev --config ./apps/frontend/astro/astro.config.mjs"
+        }
+      }
+    }
+  }
