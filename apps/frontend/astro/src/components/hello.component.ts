@@ -4,7 +4,9 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-hello',
   standalone: true,
-  imports: [NgIf],
+  imports: [
+    NgIf,
+  ],
   template: `
     <p>Hello from Angular!!</p>
 
