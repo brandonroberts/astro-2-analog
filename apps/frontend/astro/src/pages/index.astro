@@ -1,5 +1,6 @@
 ---
-import { HelloComponent } from '../components/hello.component.ts';
+// import { HelloComponent } from '@frontend/ui/hello';
+import { HelloComponent } from '../components/hello.component';
 
 const helpText = "Helping binding";
 ---
@@ -14,7 +15,7 @@ const helpText = "Helping binding";
 	</head>
 	<body>
 		<h1>Astro</h1>
-		
+		<h2>Component inside /apps</h2>
 		<HelloComponent client:visible />
 		<HelloComponent helpText="Helping" />
 		<HelloComponent helpText={helpText} />		

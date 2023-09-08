@@ -10,5 +10,5 @@ export default defineConfig({
         tsconfig: './apps/frontend/astro/tsconfig.app.json',
       },
     }),
-  ]
+  ],
 });
