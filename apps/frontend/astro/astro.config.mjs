@@ -7,7 +7,7 @@ export default defineConfig({
   integrations: [
     analogjsangular({
       vite: {
-        tsconfig: './apps/frontend/astro/tsconfig.app.json',
+        tsconfig: './tsconfig.base.json',
       },
     }),
   ],
