@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "astro": "astro"
+    "astro": "astro",
+    "upd": "ncu -i --format group"
   },
   "dependencies": {
     "@analogjs/astro-angular": "0.2.2",
@@ -20,7 +21,7 @@
     "@angular/platform-browser-dynamic": "16.2.4",
     "@angular/platform-server": "16.2.4",
     "@angular/router": "16.2.4",
-    "@nx/workspace": "16.8.0",
+    "@nx/workspace": "16.8.1",
     "astro": "3.0.10",
     "rxjs": "7.8.1",
     "tslib": "2.6.2",
@@ -34,9 +35,9 @@
     "@angular-eslint/eslint-plugin-template": "16.0.0",
     "@angular-eslint/template-parser": "16.0.0",
     "@angular/cli": "16.2.1",
-    "@nx/angular": "16.8.0",
-    "@nx/jest": "16.8.0",
-    "@nx/js": "16.8.0",
+    "@nx/angular": "16.8.1",
+    "@nx/jest": "16.8.1",
+    "@nx/js": "16.8.1",
     "@schematics/angular": "16.2.1",
     "@types/jest": "29.4.0",
     "@types/node": "16.11.7",
@@ -44,7 +45,7 @@
     "jest-environment-jsdom": "29.4.1",
     "jest-preset-angular": "13.1.0",
     "jsonc-eslint-parser": "2.1.0",
-    "nx": "16.0.1",
+    "nx": "16.8.1",
     "prettier": "2.6.2",
     "ts-jest": "29.1.0",
     "ts-node": "10.9.1",
@@ -60,3 +61,4 @@
     }
   }
 }
+
