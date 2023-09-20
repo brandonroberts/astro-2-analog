@@ -2,7 +2,7 @@
 // import { HelloComponent } from '@frontend/ui/hello';
 
 import { HelloComponent } from '../../../../../libs/frontend/ui/src/lib/hello/hello.component';
-// import { HelloComponent } from '../../components/hello.component';
+import { TodosComponent } from '../../../../../libs/frontend/ui/src/lib/todos/todos.component';
 
 const helpText = "Helping binding";
 ---
@@ -18,8 +18,13 @@ const helpText = "Helping binding";
 	<body>
 		<h1>Astro</h1>
 		<h2>Component inside /apps</h2>
+		
+		<!-- Hello 👋 -->
 		<HelloComponent client:visible />
 		<HelloComponent helpText="Helping" />
-		<HelloComponent helpText={helpText} />		
+		<HelloComponent helpText={helpText} />	
+		
+		<!-- Todos -->
+		<TodosComponent client:visible />
 	</body>
 </html>
