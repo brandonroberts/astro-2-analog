@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -29,6 +29,9 @@ dependencies:
   '@angular/forms':
     specifier: 16.2.4
     version: 16.2.4(@angular/common@16.2.4)(@angular/core@16.2.4)(@angular/platform-browser@16.2.4)(rxjs@7.8.1)
+  '@angular/google-maps':
+    specifier: 16.2.4
+    version: 16.2.4(@angular/common@16.2.4)(@angular/core@16.2.4)(rxjs@7.8.1)
   '@angular/language-service':
     specifier: 16.2.4
     version: 16.2.4
@@ -530,6 +533,20 @@ packages:
       '@angular/common': 16.2.4(@angular/core@16.2.4)(rxjs@7.8.1)
       '@angular/core': 16.2.4(rxjs@7.8.1)(zone.js@0.13.1)
       '@angular/platform-browser': 16.2.4(@angular/animations@16.2.4)(@angular/common@16.2.4)(@angular/core@16.2.4)
+      rxjs: 7.8.1
+      tslib: 2.6.2
+    dev: false
+
+  /@angular/google-maps@16.2.4(@angular/common@16.2.4)(@angular/core@16.2.4)(rxjs@7.8.1):
+    resolution: {integrity: sha512-9vOiUHiFdomu0CbqEBQmHLy45XhmeEwMD+iqQApGZDrmY6rtB4mOQwkpakkrWjn877SCuw9FGM5ATbCxaEPhvQ==}
+    peerDependencies:
+      '@angular/common': ^16.0.0 || ^17.0.0
+      '@angular/core': ^16.0.0 || ^17.0.0
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/common': 16.2.4(@angular/core@16.2.4)(rxjs@7.8.1)
+      '@angular/core': 16.2.4(rxjs@7.8.1)(zone.js@0.13.1)
+      '@types/google.maps': 3.54.1
       rxjs: 7.8.1
       tslib: 2.6.2
     dev: false
@@ -4593,6 +4610,10 @@ packages:
       '@types/express-serve-static-core': 4.17.36
       '@types/qs': 6.9.8
       '@types/serve-static': 1.15.2
+
+  /@types/google.maps@3.54.1:
+    resolution: {integrity: sha512-zh6333O/yPfcvRxpBTjnNFJjiHiujvy+tTAWwvNj3LMy90Y+VLTom8n9gvmgjXhOHgHvYpgO2Xyz31wYEYN27A==}
+    dev: false
 
   /@types/graceful-fs@4.1.6:
     resolution: {integrity: sha512-Sig0SNORX9fdW+bQuTEovKj3uHcUL6LQKbCrrqb1X7J6/ReAbhCXRAhc+SMejhLELFj2QcyuxmUooZ4bt5ReSw==}

@@ -28,12 +28,12 @@ export class TodosComponent implements OnInit {
 
   public __todos: Todo[] = [];
 
-  private http = inject(HttpClient);
+  private httpClient = inject(HttpClient);
 
   public ngOnInit(
 
   ) {
-    this.http
+    this.httpClient
       .get<Todo[]>('https://jsonplaceholder.typicode.com/todos')
       .subscribe((todos) => (this.__todos = todos));
   }

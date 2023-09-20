@@ -1,8 +1,8 @@
 ---
 // import { HelloComponent } from '@frontend/ui/hello';
-
 import { HelloComponent } from '../../../../../libs/frontend/ui/src/lib/hello/hello.component';
 import { TodosComponent } from '../../../../../libs/frontend/ui/src/lib/todos/todos.component';
+import { MapComponent } from '../../../../../libs/frontend/ui/src/lib/map/map.component';
 
 const helpText = "Helping binding";
 ---
@@ -14,17 +14,26 @@ const helpText = "Helping binding";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+
+		<!-- Can't currently get jsonp to work in the GoogleMapsService, so we need to make the call here -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=<GOOGLE_MAPS_API_KEY>"></script>
+
 	</head>
 	<body>
 		<h1>Astro</h1>
 		<h2>Component inside /apps</h2>
-		
+
 		<!-- Hello 👋 -->
 		<HelloComponent client:visible />
 		<HelloComponent helpText="Helping" />
-		<HelloComponent helpText={helpText} />	
-		
+		<HelloComponent helpText={helpText} />
+
+		<!-- How about a map? -->
+		<div style="height: 200px; aspect-ratio: 1; border: 1px dashed silver;">
+			<MapComponent client:visible />
+		</div>
+
 		<!-- Todos -->
-		<TodosComponent client:visible />
+		<TodosComponent client:visible/>
 	</body>
 </html>
