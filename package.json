@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "astro": "astro",
-    "upd": "ncu -i --format group"
+    "upd": "ncu -i --format group",
+    "run": "nx run astro-v3:serve"
   },
   "dependencies": {
     "@analogjs/astro-angular": "0.2.2",
